@@ -1,0 +1,46 @@
+.about-list {
+  display: flex;
+}
+
+.about-list-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.about-list-title {
+  width: 270px;
+  margin-bottom: 10px;
+
+  @include font($fw: 700);
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.about-list-text {
+  width: 270px;
+
+  @include font($lh: 24px);
+
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.about-section-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.about-svg {
+  width: 70px;
+  height: 70px;
+}
