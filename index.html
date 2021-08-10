@@ -37,7 +37,60 @@
                         <a class="navigation__link link" href="#">Контакты</a>
                     </li>
                 </ul>
-            </nav>
+            </nav> 
+            <button type="button" class="burger-btn" data-menu-open>
+                <svg class="burger-btn__icon">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu__container">
+                    <button type="button" class="mobile-menu__btn" data-menu-close>
+                        <svg class="mobile-menu__btn-icon">
+                            <use href="./images/sprite.svg#mobile-close"></use>
+                        </svg>
+                    </button>
+                    <ul class="nav-list list">
+                        <li class="nav-list-item">
+                            <a class="nav-list_link link menu__link_active-link" href="">Студия</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-list_link link" href="">Портфолио</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-list_link link" href="">Контакты</a>
+                        </li>
+                    </ul>
+            
+                    <ul class="menu-list list">
+                        <li class="menu-list__item">
+                            <a class="menu-list_tel link" href="tel:+380674010151">+38 067 401 01 51</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a class="menu-list_mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+            
+                    <ul class="menu-social-list list">
+                        <li class="menu-social-list__item">
+                            <a class="menu-social-list__link link" href="">Instagram
+                            </a>
+                        </li>
+                        <li class="menu-social-list__item">
+                            <a class="menu-social-list__link link" href="">Twitter
+                            </a>
+                        </li>
+                        <li class="menu-social-list__item">
+                            <a class="menu-social-list__link link" href="">Facebook
+                            </a>
+                        </li>
+                        <li class="menu-social-list__item">
+                            <a class="menu-social-list__link link" href="">LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <ul class="contact contact_position list">
                 <li class="contact__list">
                     <a class="contact__link link" href="mailto:info@devstudio.com">
@@ -60,7 +113,7 @@
     </header>
 
     <main>
-
+   
         <!--Hero-->
 
         <section class="hero">
@@ -128,22 +181,41 @@
                 <ul class="work-list list">
                     <li class="work-list-item">
                         <div class="overlay-work-list">
-                            <img src="./images/box1.jpg" alt="Человек пишет код на планшете" width="370" height="294">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/desktop-apps-desktop.webp 1x, ./images/desktop-apps-desktop@2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 1200px"
+                                    srcset="./images/desktop-apps-desktop.jpg 1x, ./images/desktop-apps-desktop@2x.jpg 2x">
+                                <img src="#" alt="Человек пишет код на планшете">
+                            </picture>
                             <p class="work-list-name overlay-work">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="work-list-item">
                         <div class="overlay-work-list">
-                            <img src="./images/box2.jpg"
-                                alt="На экране ноутбука изображение виджетов мобильного телефона" width="370"
-                                height="294">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/mobile-apps-desktop.webp 1x, ./images/mobile-apps-desktop@2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/mobile-apps-desktop.jpg 1x, ./images/mobile-apps-desktop@2x.jpg 2x">
+                                <img src="#" alt="На экране ноутбука изображение виджетов мобильного телефона">
+                            </picture>
                             <p class="work-list-name overlay-work">Мобильные приложения</p>
                         </div>
 
                     </li>
                     <li class="work-list-item">
                         <div class="overlay-work-list">
-                            <img src="./images/box3.jpg" alt="Палитра цветов на планшете" width="370" height="294">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/design-desktop.webp 1x, ./images/design-desktop@2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/design-desktop.jpg 1x, ./images/design-desktop@2x.jpg 2x">
+                                <img src="#" alt="Палитра цветов на планшете">
+                            </picture>
                             <p class="work-list-name overlay-work">Дизайнерские решения</p>
                         </div>
 
@@ -151,7 +223,7 @@
                 </ul>
             </div>
         </section>
-
+   
         <!--Team-->
 
         <section class="team">
@@ -159,7 +231,22 @@
                 <h2 class="subtitle">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-list-item">
-                        <img src="./images/img.jpg" alt="Фотография Игоря Демьяненко" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/demianenko-desktop.webp 1x, ./images/demianenko-desktop@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images/demianenko-desktop.jpg 1x, ./images/demianenko-desktop@2x.jpg 2x">
+
+                            <source media="(min-width: 768px)" srcset="./images/demianenko-tablet.webp 1x, ./images/demianenko-tablet@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images/demianenko-tablet.jpg 1x, ./images/demianenko-tablet@2x.jpg 2x">
+
+                            <source media="(max-width: 767px)" srcset="./images/demianenko-mobile.webp 1x, ./images/demianenko-mobile@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(max-width: 767px)" srcset="./images/demianenko-mobile.jpg 1x, ./images/demianenko-mobile@2x.jpg 2x">
+
+                            <img src="#" alt="Фотография Игоря Демьяненко">
+                        </picture>
+                        
                         <h3 class="team-name">Игорь Демьяненко</h3>
                         <p class="team-position">Product Designer</p>
                         <ul class="social-list list">
@@ -194,7 +281,23 @@
                         </ul>
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/img(1).jpg" alt="Фотография Ольги Репиной" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/repina-desktop.webp 1x, ./images/repina-desktop@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/repina-desktop.jpg 1x, ./images/repina-desktop@2x.jpg 2x">
+                        
+                            <source media="(min-width: 768px)"
+                                srcset="./images/repina-tablet.webp 1x, ./images/repina-tablet@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images/repina-tablet.jpg 1x, ./images/repina-tablet@2x.jpg 2x">
+                        
+                            <source media="(max-width: 767px)"
+                                srcset="./images/repina-mobile.webp 1x, ./images/repina-mobile@2x.webp 2x" type="image/webp">
+                            <source media="(max-width: 767px)" srcset="./images/repina-mobile.jpg 1x, ./images/repina-mobile@2x.jpg 2x">
+                        
+                            <img src="#" alt="Фотография Ольги Репиной">
+                        </picture>
+                        
                         <h3 class="team-name">Ольга Репина</h3>
                         <p class="team-position">Frontend Developer</p>
                         <ul class="social-list list">
@@ -229,7 +332,22 @@
                         </ul>
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/img(2).jpg" alt="Фотография Николая Тарасова" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/tarasov-desktop.webp 1x, ./images/tarasov-desktop@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images/tarasov-desktop.jpg 1x, ./images/tarasov-desktop@2x.jpg 2x">
+                        
+                            <source media="(min-width: 768px)" srcset="./images/tarasov-tablet.webp 1x, ./images/tarasov-tablet@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images/tarasov-tablet.jpg 1x, ./images/tarasov-tablet@2x.jpg 2x">
+                        
+                            <source media="(max-width: 767px)" srcset="./images/tarasov-mobile.webp 1x, ./images/tarasov-mobile@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(max-width: 767px)" srcset="./images/tarasov-mobile.jpg 1x, ./images/tarasov-mobile@2x.jpg 2x">
+                        
+                            <img src="#" alt="Фотография Николая Тарасова">
+                        </picture>
+                        
                         <h3 class="team-name">Николай Тарасов</h3>
                         <p class="team-position">Marketing</p>
                         <ul class="social-list list">
@@ -264,7 +382,22 @@
                         </ul>
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/img(3).jpg" alt="Фотография Михаила Ермакова" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/ermakov-desktop.webp 1x, ./images/ermakov-desktop@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images/ermakov-desktop.jpg 1x, ./images/ermakov-desktop@2x.jpg 2x">
+                        
+                            <source media="(min-width: 768px)" srcset="./images/ermakov-tablet.webp 1x, ./images/ermakov-tablet@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images/ermakov-tablet.jpg 1x, ./images/ermakov-tablet@2x.jpg 2x">
+                        
+                            <source media="(max-width: 767px)" srcset="./images/ermakov-mobile.webp 1x, ./images/ermakov-mobile@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(max-width: 767px)" srcset="./images/ermakov-mobile.jpg 1x, ./images/ermakov-mobile@2x.jpg 2x">
+                        
+                            <img src="#" alt="Фотография Михаила Ермакова">
+                        </picture>
+                        
                         <h3 class="team-name">Михаил Ермаков</h3>
                         <p class="team-position">UI Designer</p>
                         <ul class="social-list list">
@@ -301,7 +434,7 @@
                 </ul>
             </div>
         </section>
-
+   
         <!--Clients-->
 
         <section class="clients">
@@ -413,7 +546,8 @@
             <section>
                 <p class="footer-subtitle">Подпишитесь на рассылку</p>
                 <form class="subscribe">
-                    <input name="email" type="email" class="subscribe__input" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    <input name="email" type="email" class="subscribe__input" placeholder="E-mail"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
 
                     <button type="submit" class="subscribe__btn">Подписаться
                         <svg class="subscribe__icon">
@@ -464,8 +598,8 @@
                 <label for="email" class="modal-form-lable">
                     <span class="modal-form-name">Почта</span>
                     <span class="modal-form-enter-input">
-                        <input name="email" type="email" id="email" class="modal-form-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                            required>
+                        <input name="email" type="email" id="email" class="modal-form-input"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                         <svg class="modal-input-icon">
                             <use href="./images/icons.svg#icon-email-black"></use>
                         </svg>
@@ -491,6 +625,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
