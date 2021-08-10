@@ -3,18 +3,21 @@
 }
 
 .footer-section {
-  display: flex;
-  align-items: baseline;
+  display: block;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer-nav {
-  margin-right: 70px;
+.address-list-item {
+  display: block;
+  text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
 
-.address-list-item {
-  margin-bottom: 9px;
+.address-list {
+  margin-bottom: 60px;
 }
 
 .address-map {
@@ -50,5 +53,47 @@
   @include font;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    align-items: baseline;
+  }
+
+  .footer-nav {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .footer-nav {
+    margin-right: 70px;
+  }
+
+  .address-list-item {
+    display: block;
+    text-align: left;
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+  .address-list {
+    margin-bottom: 0;
+  }
+
+  .footer-subtitle {
+    text-align: left;
+  }
 }
