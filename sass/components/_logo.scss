@@ -1,16 +1,13 @@
 .logo {
   font-family: var(--secondary-font);
-  @include font(26px, 700, 31px);
+  @include font(24px, 700, 28px);
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 
-.header-logo {
-  margin-right: 93px;
-}
-
 .footer-logo {
   display: block;
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -21,3 +18,35 @@
 .logo_color-white {
   color: #ffff;
 }
+
+.logo_color-black {
+  color: #000000;
+}
+
+.logo_color-white {
+  color: #ffff;
+}
+
+@media screen and (min-width: 768px) {
+  .header-logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    @include font(26px, 700, 31px);
+  }
+
+  .footer-logo {
+    text-align: left;
+  }
+}
+
+// .header-logo {
+//   margin-right: 276px;
+// }
+
+// .header-logo {
+//   margin-right: 93px;
+// }
