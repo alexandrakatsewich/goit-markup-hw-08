@@ -85,12 +85,6 @@
     margin-left: auto;
   }
 
-  .contact__list {
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
-  }
-
   .contact__link {
     display: flex;
     align-items: center;
@@ -116,37 +110,27 @@
     margin-right: 10px;
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .contact__list {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .header {
     padding-top: 25px;
     padding-bottom: 25px;
   }
 
-  .header-container {
-    padding: 0;
-    justify-content: inherit;
-  }
-
-  .navigation {
-    margin-right: 305px;
-  }
-
-  .navigation__item {
-    &:not(:last-child) {
-      margin-right: 50px;
-    }
+  .contact {
+    margin: 0;
   }
 
   .navigation__link {
     @include font($fw: 500);
-  }
-
-  .contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    margin: 0;
   }
 
   .contact__list {
@@ -156,19 +140,6 @@
   }
 
   .contact__link {
-    @include font(14px, 500, 16px);
-  }
-
-  .contact__svg {
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-  }
-  .menu-list_mail {
-    margin-right: 30px;
-  }
-
-  .contact_position {
-    margin: 0;
+    @include font($fw: 500);
   }
 }
