@@ -24,6 +24,11 @@
   height: 19px;
   margin-top: 21px;
   fill: #212121;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .mobile-menu {
