@@ -142,6 +142,37 @@
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form-checkbox-label {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--text-color);
+    &::before {
+      display: block;
+      content: "";
+      width: 16px;
+      height: 15px;
+      cursor: pointer;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      border-radius: 4px;
+
+      margin-right: 7px;
+    }
+    .modal-form-checkbox:checked + &::before {
+      background-image: url(../images/icon-check.jpg);
+      background-size: cover;
+      border-color: var(--accent-color);
+    }
+  }
+}
 // .modal-title {
 //   margin-bottom: 12px;
 //   @include font(20px, 700, 23px);
