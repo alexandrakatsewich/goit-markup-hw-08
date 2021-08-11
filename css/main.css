@@ -216,9 +216,6 @@ body {
   .contact_position {
     margin-left: auto;
   }
-  .contact__list:not(:last-child) {
-    margin-bottom: 10px;
-  }
   .contact__link {
     display: flex;
     align-items: center;
@@ -241,32 +238,24 @@ body {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .contact__list:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .header {
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  .header-container {
-    padding: 0;
-    justify-content: inherit;
-  }
-  .navigation {
-    margin-right: 305px;
-  }
-  .navigation__item:not(:last-child) {
-    margin-right: 50px;
+  .contact {
+    margin: 0;
   }
   .navigation__link {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
-  }
-  .contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    margin: 0;
   }
   .contact__list:not(:last-child) {
     margin-right: 50px;
@@ -275,17 +264,6 @@ body {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
-  }
-  .contact__svg {
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-  }
-  .menu-list_mail {
-    margin-right: 30px;
-  }
-  .contact_position {
-    margin: 0;
   }
 }
 
@@ -426,6 +404,15 @@ body {
   display: flex;
   flex-direction: column;
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .close-btn {
@@ -599,6 +586,35 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-checkbox-label {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+  }
+  .modal-form-checkbox-label::before {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 15px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-right: 7px;
+  }
+  .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
+    background-image: url(../images/icon-check.jpg);
+    background-size: cover;
+    border-color: var(--accent-color);
+  }
 }
 
 .social-list {
@@ -1334,7 +1350,6 @@ body {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
   margin-top: -30px;
   margin-left: -30px;
 }
@@ -1435,5 +1450,7 @@ body {
     margin-bottom: 35px;
     padding-bottom: 15px;
   }
+  flex-basis: calc((100% - 60px) / 2);
+  margin: 15px;
 }
 /*# sourceMappingURL=main.css.map */
