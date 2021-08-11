@@ -1450,7 +1450,9 @@ body {
     margin-bottom: 35px;
     padding-bottom: 15px;
   }
-  flex-basis: calc((100% - 60px) / 2);
-  margin: 15px;
+  .project-item--link-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */
