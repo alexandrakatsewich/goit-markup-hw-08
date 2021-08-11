@@ -759,8 +759,9 @@ body {
 }
 
 .close-btn__icon {
-  width: 40px;
-  height: 40px;
+  width: 19px;
+  height: 19px;
+  margin-top: 21px;
   fill: #212121;
 }
 
@@ -1428,6 +1429,11 @@ body {
     justify-content: center;
     margin-bottom: 35px;
     padding-bottom: 15px;
+  }
+  .project-list-item {
+    display: grid;
+    grid-gap: var(--padd);
+    grid-template-columns: repeat(2, 354px);
   }
 }
 /*# sourceMappingURL=main.css.map */
