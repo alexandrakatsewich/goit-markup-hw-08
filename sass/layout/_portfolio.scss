@@ -20,9 +20,6 @@
 }
 
 .project-list-item {
-  // flex-grow: 1;
-  // max-width: 354px;
-  // width: clamp(370px, 4.5vw, 450px);
   margin-top: 30px;
   margin-left: 30px;
 
@@ -68,7 +65,6 @@
 
 .project-text-conteiner {
   padding-top: 20px;
-  padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
 
@@ -82,6 +78,7 @@
 
   @include font(18px, 700, 36px);
   letter-spacing: 0.06em;
+  color: var(--title-color);
 }
 
 .project-type {

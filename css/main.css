@@ -532,7 +532,7 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-textarea::placeholder:focus, .modal-form-textarea::placeholder:hover {
+.modal-form-textarea:focus, .modal-form-textarea:hover {
   outline: none;
   border-color: var(--accent-color);
 }
@@ -545,6 +545,8 @@ body {
 }
 
 .modal-form-checkbox-label {
+  display: flex;
+  align-items: center;
   margin-bottom: 30px;
   font-size: 12px;
   font-weight: 400;
@@ -776,9 +778,8 @@ body {
 }
 
 .close-btn__icon {
-  width: 19px;
-  height: 19px;
-  margin-top: 21px;
+  width: 40px;
+  height: 40px;
   fill: #212121;
 }
 
@@ -1017,17 +1018,16 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 480px;
-  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bg-mobile.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-mobile.jpg);
   background-size: cover;
 }
 
 .hero-title {
   max-width: 360px;
   text-align: center;
-  padding-top: 118px;
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
@@ -1063,18 +1063,23 @@ body {
   .hero-container {
     width: 768px;
     height: 400px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bg-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    margin: auto;
+  }
   .hero-container {
     width: 100%;
     height: 100%;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bg-desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-desktop.jpg);
     background-size: cover;
+    background-position: center;
   }
   .hero-title {
     font-size: 44px;
@@ -1082,7 +1087,6 @@ body {
     line-height: 1.36;
     max-width: none;
     width: 700px;
-    padding-top: 118px;
   }
 }
 
@@ -1393,7 +1397,6 @@ body {
 
 .project-text-conteiner {
   padding-top: 20px;
-  padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
   background: #ffffff;
@@ -1407,6 +1410,7 @@ body {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--title-color);
 }
 
 .project-type {
